@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerball Analyzer - Technical Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #c31432 0%, #240b36 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .section h2 {
+            color: #c31432;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #c31432;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        
+        .section p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        .faq-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #c31432;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer {
+            color: #666;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .contact-item {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-item strong {
+            width: 100px;
+            display: inline-block;
+        }
+        
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .disclaimer h3 {
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+        
+        .disclaimer p {
+            color: #856404;
+            font-size: 0.95rem;
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .feature-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 3px solid #c31432;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-desc {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .contact-info {
+                padding: 1.5rem;
+            }
+            
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎱 Powerball Analyzer</h1>
+            <p>Technical Support & Help Center</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Welcome to Powerball Analyzer Support</h2>
+                <p>Thank you for using Powerball Analyzer - the most advanced lottery analysis application powered by AI and machine learning. This page provides comprehensive support information to help you get the most out of our app.</p>
+            </div>
+            
+            <div class="section">
+                <h2>App Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-title">Number Analysis</div>
+                        <div class="feature-desc">Comprehensive frequency analysis of Powerball numbers with statistical insights</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Pattern Recognition</div>
+                        <div class="feature-desc">Advanced pattern detection for odd-even, high-low number distributions</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Five-Algorithm Analysis</div>
+                        <div class="feature-desc">Premium feature using frequency, correlation, pattern, hot-cold, and trend analysis</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">Machine Learning Prediction</div>
+                        <div class="feature-desc">AI-powered predictions using neural networks, deep learning, and LSTM models</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: How accurate are the predictions?</div>
+                    <div class="faq-answer">A: Our app uses advanced statistical analysis and machine learning algorithms to identify patterns in historical data. However, lottery numbers are inherently random, and we cannot guarantee winning results. The app is designed for entertainment and educational purposes.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: What is the difference between free and premium features?</div>
+                    <div class="faq-answer">A: Free features include basic number analysis and pattern recognition. Premium features ($0.99/month or $9.99/year) unlock Five-Algorithm Analysis, Machine Learning Prediction, unlimited predictions, and advanced backtest validation.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: How often is the data updated?</div>
+                    <div class="faq-answer">A: We update Powerball drawing data automatically after each official draw. The app checks for new data every hour and maintains a comprehensive historical database for analysis.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Can I cancel my subscription anytime?</div>
+                    <div class="faq-answer">A: Yes, you can cancel your subscription at any time through your device's App Store settings. Your premium features will remain active until the end of your current billing period.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Does the app work offline?</div>
+                    <div class="faq-answer">A: Yes, once data is downloaded, you can perform analysis offline. However, you'll need an internet connection to download the latest drawing results and verify your subscription status.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: What iOS version is required?</div>
+                    <div class="faq-answer">A: Powerball Analyzer requires iOS 18.0 or later. The app is optimized for iPhone and iPad devices.</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>How to Use the App</h2>
+                <h3>Getting Started</h3>
+                <ul>
+                    <li>Download and install Powerball Analyzer from the App Store</li>
+                    <li>Open the app and wait for the initial data download</li>
+                    <li>Explore free features like Number Analysis and Pattern Recognition</li>
+                    <li>Consider upgrading to Premium for advanced AI features</li>
+                </ul>
+                
+                <h3>Understanding Analysis Results</h3>
+                <ul>
+                    <li><strong>Hot Numbers:</strong> Numbers that appear more frequently than average</li>
+                    <li><strong>Cold Numbers:</strong> Numbers that appear less frequently than average</li>
+                    <li><strong>Accuracy Rate:</strong> Percentage of successful predictions in backtesting</li>
+                    <li><strong>Confidence Level:</strong> Algorithm's confidence in the prediction (15%-95%)</li>
+                </ul>
+                
+                <h3>Premium Features Guide</h3>
+                <ul>
+                    <li><strong>Five-Algorithm Analysis:</strong> Click on algorithm cards to calculate individual predictions</li>
+                    <li><strong>Machine Learning:</strong> Select training data range (50-200 periods) for AI analysis</li>
+                    <li><strong>Backtest Results:</strong> Review historical performance metrics and ROI calculations</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Troubleshooting</h2>
+                
+                <h3>App Crashes or Freezes</h3>
+                <ul>
+                    <li>Force close the app and restart it</li>
+                    <li>Restart your device</li>
+                    <li>Ensure you have sufficient storage space (at least 100MB free)</li>
+                    <li>Update to the latest version from the App Store</li>
+                </ul>
+                
+                <h3>Data Loading Issues</h3>
+                <ul>
+                    <li>Check your internet connection</li>
+                    <li>Try the "Reload" button on the main screen</li>
+                    <li>Close and reopen the app</li>
+                    <li>Ensure you're not using a VPN that might block data requests</li>
+                </ul>
+                
+                <h3>Subscription Problems</h3>
+                <ul>
+                    <li>Go to Settings > Apple ID > Subscriptions to manage your subscription</li>
+                    <li>Use "Restore Purchases" in the app if premium features aren't available</li>
+                    <li>Ensure you're signed in with the same Apple ID used for purchase</li>
+                    <li>Contact Apple Support for billing issues</li>
+                </ul>
+                
+                <h3>Performance Issues</h3>
+                <ul>
+                    <li>Machine Learning calculations are CPU-intensive and may take 30-60 seconds</li>
+                    <li>Close other apps to free up memory</li>
+                    <li>Use shorter training periods (50 periods) for faster results</li>
+                    <li>Avoid running multiple analyses simultaneously</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>System Requirements</h2>
+                <ul>
+                    <li><strong>iOS:</strong> 18.0 or later</li>
+                    <li><strong>Device:</strong> iPhone or iPad</li>
+                    <li><strong>Storage:</strong> 50MB minimum, 200MB recommended</li>
+                    <li><strong>Internet:</strong> Required for data updates and subscription verification</li>
+                    <li><strong>Processor:</strong> A12 Bionic or newer recommended for optimal performance</li>
+                </ul>
+            </div>
+            
+            <div class="disclaimer">
+                <h3>⚠️ Important Disclaimer</h3>
+                <p><strong>For Entertainment and Educational Use Only:</strong> Powerball Analyzer is designed for entertainment and educational purposes. We do not guarantee the accuracy of predictions or any lottery winnings. Lottery games involve chance, and past results do not predict future outcomes. Please play responsibly and within your means. This app does not constitute gambling advice or encourage excessive lottery participation.</p>
+            </div>
+            
+            <div class="contact-info">
+                <h3>📞 Contact Support</h3>
+                <div class="contact-item">
+                    <strong>Email:</strong> jamesyang14@gmail.com
+                </div>
+                
+                <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.9;">
+                    When contacting support, please include your device model, iOS version, app version, and a detailed description of the issue you're experiencing.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
